@@ -26,7 +26,7 @@ ReactDOM.render(
             <Route component={Layout}>
                 <Route path='/' component={Phones} />
             </Route>
-            <Route path='phones/:id' component={Phone} /> 
+            <Route path='/phones/:id' component={Phone} />
         </Router>
     </Provider>,
     document.getElementById('root')
