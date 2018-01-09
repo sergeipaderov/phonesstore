@@ -97,7 +97,7 @@
     color: #d17581;
 }
 .itemButton{
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 .blosd button{
@@ -543,14 +543,16 @@ footer {
     transform: translateY(0px);
 }
 
-.pull-right.btn.btn-primary {
-    margin-bottom: 16px;    
-}
-
 .btn-primary {
     box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+    margin: 5px 10px 5px 10px;
 }
 
 .btn-primary:hover {
     box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+
+.pull-right.btn.btn-primary {
+    margin-bottom: 16px;
+    margin-right: 0; 
 }
