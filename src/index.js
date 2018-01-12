@@ -15,20 +15,20 @@ import Phones from 'containers/phones'
 import Phone from 'containers/phone'
 
 const store = createStore(reducers, composeWithDevTools(
-    applyMiddleware(thunk)
+  applyMiddleware(thunk)
 ))
 
 const history = syncHistoryWithStore(browserHistory, store)
 
 ReactDOM.render(
-    <Provider store={store}>
-        <Router history={history}>
-            <Route component={Layout}>
-                <Route path='/' component={Phones} />
-                <Route path='categories/:id' component={Phone} />
-            </Route>
-            <Route path='/phones/:id' component={Phone} />
-        </Router>
-    </Provider>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <Router history={history}>
+      <Route component={Layout}>
+        <Route path='/' component={Phones}/>
+        <Route path='/categories/:id' component={Phones}/>
+      </Route>
+      <Route path='/phones/:id' component={Phone}/>
+    </Router>
+  </Provider>,
+  document.getElementById('root')
 );
